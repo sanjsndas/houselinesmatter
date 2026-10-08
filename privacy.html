@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · House Lines Matter</title>
+  <meta name="description" content="Privacy Policy for House Lines Matter. Learn how we collect, use, and protect your personal information.">
+  <meta name="author" content="House Lines Matter Editorial">
+  <link rel="canonical" href="https://houselinesmatter.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy · House Lines Matter">
+  <meta property="og:description" content="How House Lines Matter collects, uses, and safeguards your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://houselinesmatter.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #4a4a4a;
+      --muted: #7a7a7a;
+      --border: #e3e0db;
+      --accent: #b3593a;
+      --accent-soft: #f1e9e4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 8px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --max-width: 1280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- LAYOUT UTILITIES ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.6rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .main-nav a.active {
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.3rem 0.3rem 0.3rem 1rem;
+      margin-top: 1rem;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      flex: 1;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-bar button:hover {
+      background: #9a4a30;
+    }
+
+    /* ---------- PRIVACY PAGE LAYOUT ---------- */
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .privacy-content {
+      background: var(--surface);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .privacy-content h2 {
+      border-bottom: none;
+      padding-bottom: 0;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-content .subhead {
+      color: var(--ink-light);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-family: var(--serif);
+      font-weight: 500;
+    }
+
+    .privacy-content h4 {
+      font-size: 1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
+    }
+
+    .privacy-content p {
+      margin-bottom: 1rem;
+      color: var(--ink-light);
+      font-size: 0.95rem;
+    }
+
+    .privacy-content ul, .privacy-content ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--ink-light);
+      font-size: 0.95rem;
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .privacy-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .privacy-content a:hover {
+      color: #9a4a30;
+    }
+
+    .privacy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .privacy-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .privacy-meta .dot-sep {
+      width: 4px;
+      height: 4px;
+      background: var(--border);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .privacy-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sidebar-widget {
+      background: var(--surface);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .toc-list li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .toc-list li a {
+      color: var(--ink-light);
+      font-weight: 400;
+      display: block;
+      padding: 0.2rem 0;
+      border-left: 2px solid transparent;
+      padding-left: 0.75rem;
+      transition: all 0.15s ease;
+    }
+
+    .toc-list li a:hover {
+      color: var(--accent);
+      border-left-color: var(--accent);
+    }
+
+    .toc-list li a.active {
+      color: var(--accent);
+      font-weight: 500;
+      border-left-color: var(--accent);
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .contact-detail:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-detail .icon {
+      font-size: 1.1rem;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      color: var(--accent);
+    }
+
+    .contact-detail .label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-detail .value {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.5;
+    }
+
+    .contact-detail .value a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-detail .value a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .privacy-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .privacy-content {
+        padding: 1.75rem;
+      }
+
+      .privacy-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .privacy-content {
+        padding: 1.25rem;
+      }
+
+      .privacy-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    /* ---------- MISC ---------- */
+    .hidden {
+      display: none;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .breadcrumb a {
+      color: var(--muted);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent);
+    }
+
+    .breadcrumb span {
+      margin: 0 0.4rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--ink);
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 100;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">House Lines <span>Matter</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+    <div class="container">
+      <form class="search-bar" id="searchForm" role="search" onsubmit="return false;">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ========== PRIVACY LAYOUT ========== -->
+  <div class="container privacy-layout">
+
+    <!-- MAIN CONTENT -->
+    <main class="privacy-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Privacy Policy
+      </div>
+
+      <span class="category-tag">Legal</span>
+      <h2>Privacy Policy</h2>
+      <p class="subhead">
+        Your privacy is important to us. This policy explains what information we collect, 
+        how we use it, and the choices you have. We aim to be transparent and straightforward.
+      </p>
+
+      <div class="privacy-meta">
+        <span>📅 Last updated: June 1, 2025</span>
+        <span class="dot-sep"></span>
+        <span>⏱ 7 min read</span>
+        <span class="dot-sep"></span>
+        <span>📋 Effective: June 1, 2025</span>
+      </div>
+
+      <!-- 1. Introduction -->
+      <h3 id="introduction">1. Introduction</h3>
+      <p>
+        House Lines Matter ("we," "our," or "us") operates the website 
+        <a href="https://houselinesmatter.com">houselinesmatter.com</a> (the "Site"). 
+        This Privacy Policy describes how we collect, use, disclose, and safeguard your 
+        information when you visit our Site or interact with our content.
+      </p>
+      <p>
+        By using the Site, you agree to the collection and use of information in accordance 
+        with this policy. If you do not agree, please do not use the Site. We will not use 
+        or share your information except as described in this policy.
+      </p>
+
+      <!-- 2. Information We Collect -->
+      <h3 id="information-we-collect">2. Information We Collect</h3>
+      
+      <h4>2.1 Information you provide to us</h4>
+      <p>
+        We collect information you voluntarily provide when you:
+      </p>
+      <ul>
+        <li>Fill out our contact form (name, email, subject, message)</li>
+        <li>Subscribe to our newsletter (email address)</li>
+        <li>Submit a story pitch or guest article</li>
+        <li>Participate in surveys, giveaways, or comment sections</li>
+      </ul>
+      <p>
+        This information may include your name, email address, phone number, and any other 
+        details you choose to share.
+      </p>
+
+      <h4>2.2 Information collected automatically</h4>
+      <p>
+        When you visit the Site, we automatically collect certain information, including:
+      </p>
+      <ul>
+        <li><strong>Log data:</strong> IP address, browser type, operating system, referring pages, and timestamps</li>
+        <li><strong>Usage data:</strong> Pages visited, time spent, clicks, and navigation patterns</li>
+        <li><strong>Device data:</strong> Device type, screen size, and general location (country/city level)</li>
+      </ul>
+      <p>
+        We use cookies and similar technologies to collect this data. See our 
+        <a href="cookies.html">Cookies Policy</a> for more details.
+      </p>
+
+      <h4>2.3 Information from third parties</h4>
+      <p>
+        We may receive information about you from third-party services, such as analytics 
+        providers (e.g., Google Analytics) or social media platforms, if you interact with 
+        our content on those platforms.
+      </p>
+
+      <!-- 3. How We Use Your Information -->
+      <h3 id="how-we-use">3. How We Use Your Information</h3>
+      <p>
+        We use the information we collect for the following purposes:
+      </p>
+      <ul>
+        <li>To respond to your inquiries, comments, or requests</li>
+        <li>To send newsletters and editorial updates (if you opt in)</li>
+        <li>To analyze Site usage and improve our content and user experience</li>
+        <li>To detect, prevent, and address technical issues or security incidents</li>
+        <li>To comply with legal obligations and enforce our terms</li>
+      </ul>
+      <p>
+        We do not sell, rent, or trade your personal information to third parties for 
+        marketing purposes. We may use aggregated, anonymized data for statistical 
+        analysis and reporting.
+      </p>
+
+      <!-- 4. Legal Basis for Processing -->
+      <h3 id="legal-basis">4. Legal Basis for Processing</h3>
+      <p>
+        If you are located in the European Economic Area (EEA), our legal basis for 
+        collecting and using your personal information depends on the context:
+      </p>
+      <ul>
+        <li><strong>Consent:</strong> When you subscribe to our newsletter or submit a contact form</li>
+        <li><strong>Legitimate interests:</strong> To improve our Site, prevent fraud, and ensure security</li>
+        <li><strong>Contractual necessity:</strong> To fulfill obligations when you engage with our services</li>
+        <li><strong>Legal compliance:</strong> To comply with applicable laws and regulations</li>
+      </ul>
+
+      <!-- 5. Cookies & Tracking -->
+      <h3 id="cookies">5. Cookies & Tracking Technologies</h3>
+      <p>
+        We use cookies, web beacons, and similar tracking technologies to:
+      </p>
+      <ul>
+        <li>Remember your preferences and settings</li>
+        <li>Understand how you interact with the Site</li>
+        <li>Measure the effectiveness of our content</li>
+        <li>Deliver relevant editorial content</li>
+      </ul>
+      <p>
+        You can control cookies through your browser settings. For more information, 
+        please review our <a href="cookies.html">Cookies Policy</a>.
+      </p>
+
+      <!-- 6. Data Sharing & Disclosure -->
+      <h3 id="data-sharing">6. Data Sharing & Disclosure</h3>
+      <p>
+        We may share your information in the following limited circumstances:
+      </p>
+      <ul>
+        <li><strong>Service providers:</strong> Trusted third parties who assist with hosting, analytics, email delivery, and security. These providers are bound by confidentiality agreements.</li>
+        <li><strong>Legal requirements:</strong> If required by law, court order, or to protect the rights and safety of House Lines Matter, our users, or the public.</li>
+        <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or asset sale, your information may be transferred as part of the business assets.</li>
+      </ul>
+      <p>
+        We will never sell your personal information to advertisers or data brokers.
+      </p>
+
+      <!-- 7. Data Retention -->
+      <h3 id="data-retention">7. Data Retention</h3>
+      <p>
+        We retain your personal information only for as long as necessary to fulfill the 
+        purposes outlined in this policy, unless a longer retention period is required by law.
+      </p>
+      <ul>
+        <li><strong>Contact form submissions:</strong> Retained for up to 12 months</li>
+        <li><strong>Newsletter subscriptions:</strong> Until you unsubscribe or request deletion</li>
+        <li><strong>Analytics data:</strong> Typically retained for 26 months in aggregated form</li>
+      </ul>
+
+      <!-- 8. Your Rights -->
+      <h3 id="your-rights">8. Your Rights</h3>
+      <p>
+        Depending on your location, you may have the following rights regarding your 
+        personal data:
+      </p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+        <li><strong>Correction:</strong> Request that we correct inaccurate or incomplete data</li>
+        <li><strong>Deletion:</strong> Request that we delete your personal data</li>
+        <li><strong>Restriction:</strong> Request that we limit processing of your data</li>
+        <li><strong>Portability:</strong> Request transfer of your data to another provider</li>
+        <li><strong>Objection:</strong> Object to our processing of your data</li>
+        <li><strong>Withdraw consent:</strong> Withdraw consent at any time where processing is based on consent</li>
+      </ul>
+      <p>
+        To exercise any of these rights, please contact us at 
+        <a href="mailto:privacy@houselinesmatter.com">privacy@houselinesmatter.com</a>. 
+        We will respond within 30 days.
+      </p>
+
+      <!-- 9. Data Security -->
+      <h3 id="data-security">9. Data Security</h3>
+      <p>
+        We implement appropriate technical and organizational measures to protect your 
+        personal information against unauthorized access, alteration, disclosure, or 
+        destruction. These measures include:
+      </p>
+      <ul>
+        <li>Encryption of data in transit (HTTPS/TLS)</li>
+        <li>Regular security assessments and updates</li>
+        <li>Access controls and authentication for our systems</li>
+        <li>Staff training on data protection practices</li>
+      </ul>
+      <p>
+        However, no method of transmission over the Internet or electronic storage is 
+        100% secure. While we strive to protect your data, we cannot guarantee absolute security.
+      </p>
+
+      <!-- 10. International Transfers -->
+      <h3 id="international-transfers">10. International Transfers</h3>
+      <p>
+        Your information may be transferred to and processed in countries other than your 
+        own, including the United States and the European Union. We take steps to ensure 
+        that appropriate safeguards are in place, such as standard contractual clauses 
+        approved by the European Commission.
+      </p>
+
+      <!-- 11. Children's Privacy -->
+      <h3 id="childrens-privacy">11. Children's Privacy</h3>
+      <p>
+        Our Site is not directed to individuals under the age of 16. We do not knowingly 
+        collect personal information from children. If you believe we have inadvertently 
+        collected data from a child, please contact us immediately, and we will take steps 
+        to delete it.
+      </p>
+
+      <!-- 12. Third-Party Links -->
+      <h3 id="third-party-links">12. Third-Party Links</h3>
+      <p>
+        Our Site may contain links to third-party websites, services, or resources. We are 
+        not responsible for the privacy practices or content of these external sites. We 
+        encourage you to review the privacy policies of any third-party sites you visit.
+      </p>
+
+      <!-- 13. Changes to This Policy -->
+      <h3 id="changes">13. Changes to This Policy</h3>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will revise 
+        the "Last updated" date at the top of this page. We encourage you to review this 
+        policy periodically to stay informed about how we protect your information.
+      </p>
+      <p>
+        Your continued use of the Site after any changes constitutes acceptance of the 
+        updated policy.
+      </p>
+
+      <!-- 14. Contact Us -->
+      <h3 id="contact">14. Contact Us</h3>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or 
+        our data practices, please contact us:
+      </p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:privacy@houselinesmatter.com">privacy@houselinesmatter.com</a></li>
+        <li><strong>Mail:</strong> House Lines Matter, Via Brera 14, 20121 Milano MI, Italy</li>
+        <li><strong>Phone:</strong> +39 02 1234 5678</li>
+      </ul>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted);">
+        <em>This policy is provided for informational purposes and does not constitute legal advice. 
+        For specific legal concerns, please consult a qualified attorney.</em>
+      </p>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="privacy-sidebar" aria-label="Privacy policy sidebar">
+      <div class="sidebar-widget">
+        <h3>On This Page</h3>
+        <ul class="toc-list">
+          <li><a href="#introduction" class="active">1. Introduction</a></li>
+          <li><a href="#information-we-collect">2. Information We Collect</a></li>
+          <li><a href="#how-we-use">3. How We Use Your Information</a></li>
+          <li><a href="#legal-basis">4. Legal Basis for Processing</a></li>
+          <li><a href="#cookies">5. Cookies & Tracking</a></li>
+          <li><a href="#data-sharing">6. Data Sharing & Disclosure</a></li>
+          <li><a href="#data-retention">7. Data Retention</a></li>
+          <li><a href="#your-rights">8. Your Rights</a></li>
+          <li><a href="#data-security">9. Data Security</a></li>
+          <li><a href="#international-transfers">10. International Transfers</a></li>
+          <li><a href="#childrens-privacy">11. Children's Privacy</a></li>
+          <li><a href="#third-party-links">12. Third-Party Links</a></li>
+          <li><a href="#changes">13. Changes to This Policy</a></li>
+          <li><a href="#contact">14. Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Privacy Contact</h3>
+        <div class="contact-detail">
+          <div class="icon">✉</div>
+          <div>
+            <span class="label">Privacy Inquiries</span>
+            <div class="value"><a href="mailto:privacy@houselinesmatter.com">privacy@houselinesmatter.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">⚖</div>
+          <div>
+            <span class="label">Data Protection</span>
+            <div class="value">House Lines Matter<br>Via Brera 14<br>20121 Milano MI, Italy</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">⏱</div>
+          <div>
+            <span class="label">Response Time</span>
+            <div class="value">We respond to privacy requests within 30 days.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Related Policies</h3>
+        <ul class="toc-list">
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size: 1.5rem; margin-bottom: 1rem;">House Lines <span>Matter</span></div>
+          <p style="max-width: 300px; line-height: 1.7;">An independent editorial publication exploring interior design, architecture, and the built environment. We publish long-form guides, critical essays, and practical advice.</p>
+          <p style="margin-top: 1.5rem; font-size: 0.75rem;">© 2025 House Lines Matter. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interiors</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // ========== SEARCH BAR (placeholder) ==========
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const term = searchInput.value.trim();
+        if (term) {
+          console.log('Search for:', term);
+          alert(`Searching for: "${term}"\n\n(In a production site, this would redirect to search results.)`);
+        }
+      });
+
+      // ========== BACK TO TOP BUTTON ==========
+      const backToTop = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== SIDEBAR TOC ACTIVE STATE ==========
+      const sections = document.querySelectorAll('.privacy-content h3[id]');
+      const tocLinks = document.querySelectorAll('.toc-list li a');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            tocLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link

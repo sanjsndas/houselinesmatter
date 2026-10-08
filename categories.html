@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · House Lines Matter</title>
+  <meta name="description" content="Browse all categories on House Lines Matter: Interiors, Architecture, Materials, Lighting, Furniture, Small Spaces, and more.">
+  <meta name="author" content="House Lines Matter Editorial">
+  <link rel="canonical" href="https://houselinesmatter.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · House Lines Matter">
+  <meta property="og:description" content="Browse all categories on House Lines Matter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://houselinesmatter.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #4a4a4a;
+      --muted: #7a7a7a;
+      --border: #e3e0db;
+      --accent: #b3593a;
+      --accent-soft: #f1e9e4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 8px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --max-width: 1280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- LAYOUT UTILITIES ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.6rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.3rem 0.3rem 0.3rem 1rem;
+      margin-top: 1rem;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      flex: 1;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-bar button:hover {
+      background: #9a4a30;
+    }
+
+    /* ---------- PAGE INTRO ---------- */
+    .page-intro {
+      margin-bottom: 3rem;
+      max-width: 720px;
+    }
+
+    .page-intro p {
+      font-size: 1.15rem;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+
+    /* ---------- CATEGORY GRID ---------- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+    }
+
+    .category-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .category-card-content {
+      padding: 1.75rem 1.75rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-card-content p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .category-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .category-card-meta .count {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ---------- CATEGORY DETAILS (tag cloud) ---------- */
+    .tag-cloud-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .tag-cloud-section h3 {
+      font-size: 1.2rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag-cloud a {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 0.85rem;
+      transition: all 0.15s;
+    }
+
+    .tag-cloud a:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    /* ---------- FEATURED IN CATEGORY ---------- */
+    .featured-category-section {
+      margin-bottom: 4rem;
+    }
+
+    .featured-category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-category-header h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+    }
+
+    .featured-category-header a {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- ARTICLE CARD (reused) ---------- */
+    .article-card {
+      background: transparent;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .article-card:last-child {
+      border-bottom: none;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-thumb {
+      width: 140px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+
+    .card-excerpt {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      margin: 0.5rem 0 0.75rem;
+      line-height: 1.5;
+    }
+
+    .article-title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .article-card {
+        flex-direction: column;
+      }
+
+      .card-thumb {
+        width: 100%;
+        height: 180px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .featured-category-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .tag-cloud-section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">House Lines <span>Matter</span></div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="categories.html" style="color: var(--accent); font-weight: 600;">Categories</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+    <div class="container">
+      <form class="search-bar" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ========== PAGE CONTENT ========== -->
+  <main class="container">
+
+    <!-- PAGE INTRO -->
+    <div class="page-intro">
+      <h1>Categories</h1>
+      <p>Explore our editorial by topic. From the structural to the decorative, each category gathers long-form guides, critical essays, and practical advice to help you design with intention.</p>
+    </div>
+
+    <!-- CATEGORY GRID -->
+    <div class="category-grid" id="categoryGrid">
+      <!-- filled by JS -->
+    </div>
+
+    <!-- TAG CLOUD -->
+    <div class="tag-cloud-section">
+      <h3>All Topics</h3>
+      <div class="tag-cloud" id="tagCloud">
+        <!-- filled by JS -->
+      </div>
+    </div>
+
+    <!-- FEATURED IN CATEGORY (dynamic example) -->
+    <section class="featured-category-section" id="featuredCategorySection">
+      <!-- filled by JS -->
+    </section>
+
+    <!-- RECENT FROM ALL CATEGORIES -->
+    <div class="featured-category-header" style="margin-bottom: 1.5rem;">
+      <h3>Recent from all categories</h3>
+      <a href="index.html">View all →</a>
+    </div>
+    <div id="recentArticlesList" class="article-list" style="margin-bottom: 4rem;">
+      <!-- filled by JS -->
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size: 1.5rem; margin-bottom: 1rem;">House Lines <span>Matter</span></div>
+          <p style="max-width: 300px; line-height: 1.7;">An independent editorial publication exploring interior design, architecture, and the built environment. We publish long-form guides, critical essays, and practical advice.</p>
+          <p style="margin-top: 1.5rem; font-size: 0.75rem;">© 2025 House Lines Matter. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interiors</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ========== DATA ==========
+    const categories = [
+      {
+        slug: 'interiors',
+        name: 'Interiors',
+        description: 'Room-by-room guides, styling advice, and the principles that make indoor spaces feel considered and lived-in.',
+        image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop',
+        alt: 'Elegant living room with a fireplace, bookshelves, and neutral furniture',
+        count: 24
+      },
+      {
+        slug: 'architecture',
+        name: 'Architecture',
+        description: 'From residential projects to urban theory — exploring how buildings shape the way we live, gather, and move.',
+        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop',
+        alt: 'Modern house with large glass walls and stone cladding',
+        count: 18
+      },
+      {
+        slug: 'materials',
+        name: 'Materials',
+        description: 'Stone, timber, concrete, textile — how material choices influence atmosphere, durability, and sustainability.',
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
+        alt: 'Close-up of a concrete wall and wooden shelf in a minimalist room',
+        count: 15
+      },
+      {
+        slug: 'lighting',
+        name: 'Lighting',
+        description: 'The art and science of illumination: layered schemes, fixture selection, and the impact of light on mood.',
+        image: 'https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=400&fit=crop',
+        alt: 'Warm pendant lights hanging over a dining table',
+        count: 12
+      },
+      {
+        slug: 'furniture',
+        name: 'Furniture',
+        description: 'Design icons, contemporary makers, and practical advice on selecting pieces that balance comfort and form.',
+        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop',
+        alt: 'Modern sofa and coffee table in a bright living room',
+        count: 20
+      },
+      {
+        slug: 'small-spaces',
+        name: 'Small Spaces',
+        description: 'Smart solutions for apartments, studios, and compact homes — proving that good design works at any scale.',
+        image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop',
+        alt: 'Bright small living room with white walls, built-in shelves, and a sofa',
+        count: 14
+      },
+      {
+        slug: 'sustainability',
+        name: 'Sustainability',
+        description: 'Eco-conscious design, regenerative materials, and the push toward a built environment that gives more than it takes.',
+        image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=400&fit=crop',
+        alt: 'Bamboo flooring and a cork wall in a sustainable interior',
+        count: 11
+      },
+      {
+        slug: 'urbanism',
+        name: 'Urbanism',
+        description: 'Cities, public space, and the systems that shape our daily lives — from transit to housing policy.',
+        image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&h=400&fit=crop',
+        alt: 'Aerial view of a dense city skyline at dusk',
+        count: 9
+      },
+      {
+        slug: 'process',
+        name: 'Process',
+        description: 'Behind the scenes: how architects and designers work, from concept sketches to construction documentation.',
+        image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop',
+        alt: 'Architectural floor plan drawings and a ruler on a desk',
+        count: 7
+      }
+    ];
+
+    // Sample article data (same as index, but we'll show a few)
+    const articles = [
+      {
+        id: 1,
+        title: "The Art of Layered Lighting in Modern Homes",
+        category: "lighting",
+        excerpt: "Good lighting is not just about brightness. It's about mood, function, and hierarchy. Here's how to design a layered lighting scheme that transforms your home.",
+        image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&h=280&fit=crop",
+        alt: "Warm pendant lights hanging over a dining table in a modern interior",
+        author: "Elena Marchetti",
+        date: "April 10, 2025",
+        readTime: "8 min read"
+      },
+      {
+        id: 2,
+        title: "Why Material Honesty Is the New Luxury",
+        category: "materials",
+        excerpt: "From exposed concrete to raw timber, designers are embracing materials that age gracefully and tell a story. We look at the shift away from veneers and toward authenticity.",
+        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=280&fit=crop",
+        alt: "Close-up of a concrete wall and wooden shelf in a minimalist room",
+        author: "David Chen",
+        date: "April 8, 2025",
+        readTime: "10 min read"
+      },
+      {
+        id: 3,
+        title: "Small Space, Big Ideas: A 45m² Apartment in Lisbon",
+        category: "small-spaces",
+        excerpt: "How do you make a tiny apartment feel generous? A case study in smart storage, reflective surfaces, and multifunctional furniture.",
+        image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=400&h=280&fit=crop",
+        alt: "Bright small living room with white walls, built-in shelves, and a sofa",
+        author: "Sofia Almeida",
+        date: "April 5, 2025",
+        readTime: "7 min read"
+      },
+      {
+        id: 4,
+        title: "The Return of the Formal Living Room",
+        category: "interiors",
+        excerpt: "After years of open-plan dominance, the dedicated living room is making a comeback — but with a modern, flexible twist. We explore why.",
+        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=280&fit=crop",
+        alt: "Elegant living room with a fireplace, bookshelves, and neutral furniture",
+        author: "Elena Marchetti",
+        date: "April 2, 2025",
+        readTime: "6 min read"
+      },
+      {
+        id: 5,
+        title: "Floor Plans That Work: A Practical Guide to Space Planning",
+        category: "architecture",
+        excerpt: "Before you choose a single finish, get the plan right. This guide covers circulation, zoning, and furniture layout for real-life living.",
+        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=280&fit=crop",
+        alt: "Architectural floor plan drawings and a ruler on a desk",
+        author: "Marcus Weber",
+        date: "March 30, 2025",
+        readTime: "14 min read"
+      }
+    ];
+
+    // ========== RENDER CATEGORY GRID ==========
+    function renderCategoryGrid() {
+      const grid = document.getElementById('categoryGrid');
+      grid.innerHTML = categories.map(cat => `
+        <a href="#" class="category-card" data-category="${cat.slug}">
+          <img class="category-card-image" src="${cat.image}" alt="${cat.alt}" loading="lazy">
+          <div class="category-card-content">
+            <h3>${cat.name}</h3>
+            <p>${cat.description}</p>
+            <div class="category-card-meta">
+              <span>${cat.count} articles</span>
+              <span class="count">Explore →</span>
+            </div>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // ========== RENDER TAG CLOUD ==========
+    function renderTagCloud() {
+      const cloud = document.getElementById('tagCloud');
+      // Combine category names and some extra tags
+      const extraTags = ['Renovation', 'Color Theory', 'Open Plan', 'Minimalism', 'Scandinavian', 'Industrial', 'Mid-Century', 'Biophilic', 'Acoustics', 'Storage'];
+      const allTags = [...categories.map(c => c.name), ...extraTags];
+      // Shuffle for visual variety
+      const shuffled = allTags.sort(() => Math.random() - 0.5);
+      cloud.innerHTML = shuffled.map(tag => `
+        <a href="#" data-tag="${tag.toLowerCase()}">${tag}</a>
+      `).join('');
+    }
+
+    // ========== RENDER FEATURED CATEGORY (dynamic example) ==========
+    function renderFeaturedCategory() {
+      const section = document.getElementById('featuredCategorySection');
+      // Pick a random category to feature
+      const featured = categories[Math.floor(Math.random() * categories.length)];
+      // Get articles in that category (fallback to first 2)
+      const catArticles = articles.filter(a => a.category === featured.slug).slice(0, 2);
+      const displayArticles = catArticles.length > 0 ? catArticles : articles.slice(0, 2);
+
+      section.innerHTML = `
+        <div class="featured-category-header">
+          <h3>Featured: ${featured.name}</h3>
+          <a href="#">View all ${featured.name} →</a>
+        </div>
+        <div class="grid-2" id="featuredArticlesGrid">
+          ${displayArticles.map(article => `
+            <article class="article-card" style="border-bottom: none; flex-direction: column; padding: 0;">
+              <img src="${article.image}" alt="${article.alt}" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 0.75rem;">
+              <span class="category-tag">${article.category}</span>
+              <h3 class="article-title" style="font-size: 1.3rem;">${article.title}</h3>
+              <p style="font-size: 0.85rem; color: var(--ink-light); margin: 0.5rem 0;">${article.excerpt.substring(0, 100)}…</p>
+              <div class="meta">
+                <span>${article.author}</span>
+                <span>·</span>
+                <span>${article.readTime}</span>
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // ========== RENDER RECENT ARTICLES ==========
+    function renderRecentArticles() {
+      const list = document.getElementById('recentArticlesList');
+      // Take first 4 articles
+      const recent = articles.slice(0, 4);
+      list.innerHTML = recent.map(article => `
+        <article class="article-card" data-category="${article.category}">
+          <div class="card-content">
+            <span class="category-tag">${article.category}</span>
+            <h3 class="article-title">${article.title}</h3>
+            <p class="card-excerpt">${article.excerpt}</p>
+            <div class="meta">
+              <span>${article.author}</span>
+              <span>·</span>
+              <span>${article.date}</span>
+              <span>·</span>
+              <span class="reading-time">${article.readTime}</span>
+            </div>
+          </div>
+          <img class="card-thumb" src="${article.image}" alt="${article.alt}" loading="lazy">
+        </article>
+      `).join('');
+    }
+
+    // ========== SETUP INTERACTIONS ==========
+    function setupInteractions() {
+      // Category card click – prevent default for demo, could navigate to category page
+      document.querySelectorAll('.category-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          const cat = card.dataset.category;
+          alert(`Navigating to "${cat}" category page (demo). In a real site, this would link to /category/${cat}.`);
+        });
+      });
+
+      // Tag cloud click
+      document.querySelectorAll('.tag-cloud a').forEach(tag => {
+        tag.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert(`Filtering by tag: "${tag.textContent}" (demo).`);
+        });
+      });
+
+      // Search form
+      const form = document.getElementById('searchForm');
+      const input = document.getElementById('searchInput');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const term = input.value.trim();
+        if (term) {
+          alert(`Searching for: "${term}" (demo). In a real site, this would filter articles.`);
+        } else {
+          alert('Please enter a search term.');
+        }
+      });
+    }
+
+    // ========== INIT ==========
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCategoryGrid();
+      renderTagCloud();
+      renderFeaturedCategory();
+      renderRecentArticles();
+      setupInteractions();
+    });
+  </script>
+
+</body>
+</html>

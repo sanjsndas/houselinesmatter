@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · House Lines Matter</title>
+  <meta name="description" content="Get in touch with the House Lines Matter editorial team. Pitch a story, ask a question, or just say hello.">
+  <meta name="author" content="House Lines Matter Editorial">
+  <link rel="canonical" href="https://houselinesmatter.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · House Lines Matter">
+  <meta property="og:description" content="Get in touch with the House Lines Matter editorial team.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://houselinesmatter.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #4a4a4a;
+      --muted: #7a7a7a;
+      --border: #e3e0db;
+      --accent: #b3593a;
+      --accent-soft: #f1e9e4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 8px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --max-width: 1280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- LAYOUT UTILITIES ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.6rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .main-nav a.active {
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.3rem 0.3rem 0.3rem 1rem;
+      margin-top: 1rem;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      flex: 1;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-bar button:hover {
+      background: #9a4a30;
+    }
+
+    /* ---------- CONTACT PAGE LAYOUT ---------- */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .contact-card h2 {
+      border-bottom: none;
+      padding-bottom: 0;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-card .subhead {
+      color: var(--ink-light);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    /* ---------- FORM ---------- */
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none;
+      color: var(--ink);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(179, 89, 58, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 160px;
+      line-height: 1.6;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237a7a7a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .btn-submit {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0.9rem 2.5rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-submit:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ---------- SUCCESS MESSAGE ---------- */
+    .success-message {
+      display: none;
+      background: #f0f7f0;
+      border: 1px solid #c3dcc3;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .success-message h4 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: #2d6a2d;
+      margin-bottom: 0.4rem;
+    }
+
+    .success-message p {
+      color: #3d7a3d;
+      font-size: 0.9rem;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sidebar-widget {
+      background: var(--surface);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .contact-detail:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-detail .icon {
+      font-size: 1.1rem;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      color: var(--accent);
+    }
+
+    .contact-detail .label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-detail .value {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.5;
+    }
+
+    .contact-detail .value a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-detail .value a:hover {
+      text-decoration: underline;
+    }
+
+    .response-time {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .response-time .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4caf50;
+      flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .faq-mini {
+      list-style: none;
+    }
+
+    .faq-mini li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .faq-mini li:last-child {
+      border-bottom: none;
+    }
+
+    .faq-mini li a {
+      font-weight: 500;
+    }
+
+    .faq-mini .meta {
+      margin-top: 0.2rem;
+      font-size: 0.7rem;
+    }
+
+    /* ---------- MAP / OFFICE ---------- */
+    .office-section {
+      margin-bottom: 4rem;
+    }
+
+    .office-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .office-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+
+    .office-card h4 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .office-card p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+
+    .office-card .hours {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+
+    .office-card .hours strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .office-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 1.75rem;
+      }
+
+      .contact-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-card {
+        padding: 1.25rem;
+      }
+
+      .btn-submit {
+        width: 100%;
+      }
+    }
+
+    /* ---------- MISC ---------- */
+    .hidden {
+      display: none;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .breadcrumb a {
+      color: var(--muted);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent);
+    }
+
+    .breadcrumb span {
+      margin: 0 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">House Lines <span>Matter</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+    <div class="container">
+      <form class="search-bar" id="searchForm" role="search" onsubmit="return false;">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ========== CONTACT LAYOUT ========== -->
+  <div class="container contact-layout">
+
+    <!-- LEFT COLUMN: CONTACT FORM -->
+    <main>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Contact
+      </div>
+
+      <div class="contact-card">
+        <span class="category-tag">Get in Touch</span>
+        <h2>We'd love to hear from you</h2>
+        <p class="subhead">
+          Whether you have a story pitch, a question about a project, or just want to share your thoughts on design — 
+          our inbox is always open. We read every message, even if we can't always reply right away.
+        </p>
+
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span style="color: var(--accent);">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span style="color: var(--accent);">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Choose a topic…</option>
+                <option value="pitch">Story Pitch / Submission</option>
+                <option value="feedback">Feedback on an Article</option>
+                <option value="partnership">Partnership / Advertising</option>
+                <option value="press">Press Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone <span style="color: var(--muted); font-weight: 400;">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span style="color: var(--accent);">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+
+          <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.6rem;">
+            <input type="checkbox" id="consent" name="consent" required style="width: auto; margin-top: 0.3rem; accent-color: var(--accent);">
+            <label for="consent" style="font-weight: 400; font-size: 0.8rem; color: var(--ink-light); line-height: 1.5; cursor: pointer;">
+              I agree to the <a href="privacy.html" style="color: var(--accent); text-decoration: underline;">Privacy Policy</a> 
+              and consent to being contacted regarding my inquiry.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message →</button>
+          <p class="form-note">We typically respond within 2–3 business days. For urgent press inquiries, please email <a href="mailto:press@houselinesmatter.com" style="color: var(--accent);">press@houselinesmatter.com</a> directly.</p>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+          <h4>✓ Message sent successfully</h4>
+          <p>Thank you for reaching out. We'll get back to you as soon as we can.</p>
+        </div>
+      </div>
+
+      <!-- OFFICE / LOCATION INFO -->
+      <section class="office-section" style="margin-top: 3rem;">
+        <div class="section-heading" style="margin-top: 0;">
+          <h2>Our Studio</h2>
+        </div>
+        <div class="office-grid">
+          <div class="office-card">
+            <h4>Milan</h4>
+            <p>
+              Via Brera 14<br>
+              20121 Milano MI<br>
+              Italy
+            </p>
+            <div class="hours">
+              <strong>Studio Hours</strong>
+              Monday – Friday: 9:00 – 18:00 CET<br>
+              Saturday – Sunday: Closed
+            </div>
+          </div>
+          <div class="office-card">
+            <h4>Editorial Inquiries</h4>
+            <p>
+              For story pitches, article submissions, and editorial collaboration:
+            </p>
+            <p style="margin-top: 0.75rem;">
+              <a href="mailto:editorial@houselinesmatter.com" style="color: var(--accent); font-weight: 500;">editorial@houselinesmatter.com</a>
+            </p>
+            <div class="hours">
+              <strong>Response Time</strong>
+              We aim to respond to all editorial inquiries within 5 business days.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="contact-sidebar" aria-label="Contact sidebar">
+      <div class="sidebar-widget">
+        <h3>Contact Details</h3>
+        <div class="contact-detail">
+          <div class="icon">✉</div>
+          <div>
+            <span class="label">General Inquiries</span>
+            <div class="value"><a href="mailto:hello@houselinesmatter.com">hello@houselinesmatter.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">✎</div>
+          <div>
+            <span class="label">Editorial</span>
+            <div class="value"><a href="mailto:editorial@houselinesmatter.com">editorial@houselinesmatter.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">◈</div>
+          <div>
+            <span class="label">Advertising</span>
+            <div class="value"><a href="mailto:ads@houselinesmatter.com">ads@houselinesmatter.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">☏</div>
+          <div>
+            <span class="label">Phone</span>
+            <div class="value">+39 02 1234 5678</div>
+          </div>
+        </div>
+        <div class="response-time">
+          <span class="dot"></span>
+          <span>Currently responding within 2–3 business days</span>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Quick Answers</h3>
+        <ul class="faq-mini">
+          <li>
+            <a href="#">How do I submit a story pitch?</a>
+            <div class="meta">Editorial · 2 min read</div>
+          </li>
+          <li>
+            <a href="#">Do you accept guest articles?</a>
+            <div class="meta">Editorial · 3 min read</div>
+          </li>
+          <li>
+            <a href="#">How can I advertise on House Lines Matter?</a>
+            <div class="meta">Partnerships · 4 min read</div>
+          </li>
+          <li>
+            <a href="#">Can I republish an article?</a>
+            <div class="meta">Legal · 2 min read</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Follow Along</h3>
+        <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 1rem;">
+          Stay updated with our latest articles, studio visits, and design thinking.
+        </p>
+        <ul class="faq-mini">
+          <li><a href="#">Instagram →</a></li>
+          <li><a href="#">Pinterest →</a></li>
+          <li><a href="#">LinkedIn →</a></li>
+          <li><a href="#">Newsletter →</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size: 1.5rem; margin-bottom: 1rem;">House Lines <span>Matter</span></div>
+          <p style="max-width: 300px; line-height: 1.7;">An independent editorial publication exploring interior design, architecture, and the built environment. We publish long-form guides, critical essays, and practical advice.</p>
+          <p style="margin-top: 1.5rem; font-size: 0.75rem;">© 2025 House Lines Matter. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interiors</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ========== CONTACT FORM SUBMISSION ==========
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Basic validation
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const consent = document.getElementById('consent').checked;
+
+        if (!name || !email || !message || !consent) {
+          alert('Please fill in all required fields and agree to the privacy policy.');
+          return;
+        }
+
+        // Simulate form submission
+        const submitBtn = form.querySelector('.btn-submit');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending…';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+
+        setTimeout(() => {
+          // Hide form, show success
+          form.style.display = 'none';
+          successMessage.classList.add('show');
+
+          // Reset button state for potential reuse
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+
+          // Scroll to success message
+          successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+          // Optional: log form data to console (for demo)
+          console.log('Form submitted:', { name, email, message });
+        }, 1200);
+      });
+
+      // ========== SEARCH BAR (placeholder) ==========
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const term = searchInput.value.trim();
+        if (term) {
+          // In a real site, redirect to search results page
+          console.log('Search for:', term);
+          alert(`Searching for: "${term}"\n\n(In a production site, this would redirect to search results.)`);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

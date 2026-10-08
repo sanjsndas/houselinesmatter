@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · House Lines Matter</title>
+  <meta name="description" content="About House Lines Matter — independent editorial for interior design, architecture, and modern living. Meet the editor, our mission, and editorial standards.">
+  <meta name="author" content="House Lines Matter Editorial">
+  <link rel="canonical" href="https://houselinesmatter.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · House Lines Matter">
+  <meta property="og:description" content="Independent editorial for interior design, architecture, and modern living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://houselinesmatter.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About House Lines Matter",
+    "description": "Independent editorial for interior design, architecture, and modern living.",
+    "url": "https://houselinesmatter.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "House Lines Matter"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #4a4a4a;
+      --muted: #7a7a7a;
+      --border: #e3e0db;
+      --accent: #b3593a;
+      --accent-soft: #f1e9e4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 8px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --max-width: 1280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    /* ---------- LAYOUT UTILITIES ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.6rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .main-nav a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ---------- PAGE LAYOUT ---------- */
+    .page-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .about-hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-hero .subhead {
+      font-size: 1.2rem;
+      color: var(--ink-light);
+      max-width: 700px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .about-hero .mission {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .mission-item {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .mission-item strong {
+      display: block;
+      font-size: 1.8rem;
+      font-family: var(--serif);
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .mission-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ---------- EDITOR PROFILE ---------- */
+    .editor-profile {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .editor-profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .editor-profile .editor-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .editor-profile .editor-role {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+
+    .editor-profile .editor-bio {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+
+    /* ---------- VALUES GRID ---------- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .value-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+
+    .value-card .icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .value-card h4 {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .value-card p {
+      font-size: 0.88rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .sidebar-widget {
+      background: var(--surface);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-widget li a {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+    }
+
+    .sidebar-widget li a:hover {
+      color: var(--accent);
+    }
+
+    .sidebar-widget p {
+      font-size: 0.88rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .grid-2,
+      .grid-3,
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .editor-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .about-hero {
+        padding: 1.5rem;
+      }
+
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .mission-item strong {
+        font-size: 1.5rem;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">House Lines <span>Matter</span></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== MAIN PAGE LAYOUT ========== -->
+  <div class="container page-layout">
+
+    <!-- LEFT COLUMN: ABOUT CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="about-hero">
+        <span class="category-tag">About us</span>
+        <h1>We believe good design<br>starts with clear lines.</h1>
+        <p class="subhead">House Lines Matter is an independent editorial publication for interior design, architecture, and the built environment. We publish long-form guides, critical essays, and practical advice — with no fluff, no hidden agendas, and no sponsored content disguised as editorial.</p>
+        <div class="mission">
+          <div class="mission-item">
+            <strong>12+</strong>
+            <span>Years of combined editorial experience</span>
+          </div>
+          <div class="mission-item">
+            <strong>200+</strong>
+            <span>Long-form articles published</span>
+          </div>
+          <div class="mission-item">
+            <strong>100%</strong>
+            <span>Independent, reader-supported</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION / STORY -->
+      <section style="margin-bottom: 3rem;">
+        <h2>Why we exist</h2>
+        <div class="grid-2">
+          <div>
+            <p style="font-size: 0.95rem; color: var(--ink-light); line-height: 1.7; margin-bottom: 1rem;">Most design media is either too superficial or too academic. We started House Lines Matter to fill the gap — a place for thoughtful, accessible writing that respects the intelligence of its readers.</p>
+            <p style="font-size: 0.95rem; color: var(--ink-light); line-height: 1.7; margin-bottom: 1rem;">Our editorial is built on three principles: <strong>clarity</strong> over jargon, <strong>substance</strong> over trends, and <strong>honesty</strong> over hype. We don't do listicles for the sake of clicks. We don't publish press releases. We write for people who want to understand how spaces work and why they feel the way they do.</p>
+            <p style="font-size: 0.95rem; color: var(--ink-light); line-height: 1.7;">Whether you're a homeowner planning a renovation, an architect looking for critical perspective, or simply someone who loves the built environment — we hope you'll find something useful here.</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Modern house with large glass walls and stone cladding" style="width: 100%; height: 260px; object-fit: cover; margin-bottom: 1rem;">
+            <p style="font-size: 0.75rem; color: var(--muted); text-align: center;">© House Lines Matter — independent design journalism</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDITOR PROFILE -->
+      <section style="margin-bottom: 3rem;">
+        <h2>Meet the editor</h2>
+        <div class="editor-profile">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+          <div class="editor-info">
+            <h3>Elena Marchetti</h3>
+            <div class="editor-role">Editor-in-Chief & Founder</div>
+            <p class="editor-bio">Elena is an architect and writer based in Milan. She holds a Master's in Architecture from Politecnico di Milano and has over a decade of experience in residential and adaptive-reuse projects across Europe. Before founding House Lines Matter, she worked as a design editor for a leading international architecture magazine.</p>
+            <p class="editor-bio" style="margin-top: 0.75rem;">Her writing focuses on the intersection of material culture, sustainability, and everyday living. She believes that the best design writing should be as considered and intentional as the spaces it describes.</p>
+            <div class="meta" style="margin-top: 1rem; flex-wrap: wrap; gap: 0.75rem;">
+              <span>📍 Milan, Italy</span>
+              <span>·</span>
+              <span>✍️ 120+ articles</span>
+              <span>·</span>
+              <span>🏛️ Architect (M.Arch)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDITORIAL VALUES -->
+      <section style="margin-bottom: 2rem;">
+        <h2>How we work</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="icon">🔍</div>
+            <h4>Research first</h4>
+            <p>Every article starts with primary sources — interviews, site visits, and technical references. We don't rely on second-hand summaries or AI-generated content.</p>
+          </div>
+          <div class="value-card">
+            <div class="icon">⚖️</div>
+            <h4>No hidden agendas</h4>
+            <p>We are not sponsored by brands and we don't run native advertising. When we mention a product, it's because we believe it's genuinely relevant — never because we were paid to.</p>
+          </div>
+          <div class="value-card">
+            <div class="icon">📐</div>
+            <h4>Practical & critical</h4>
+            <p>We aim to be both useful and thoughtful. That means actionable advice grounded in real-world constraints, alongside critical reflection on where design is heading.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / IMPRINT -->
+      <section style="margin-top: 2.5rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);">
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Get in touch</h3>
+        <p style="font-size: 0.9rem; color: var(--ink-light);">We welcome pitches, feedback, and questions. For editorial inquiries, please write to <strong>editor@houselinesmatter.com</strong> — we read everything, though we can't always respond individually.</p>
+        <p style="font-size: 0.8rem; color: var(--muted); margin-top: 1rem;">House Lines Matter is an independent publication. All content © 2025. No part of this site may be reproduced without permission.</p>
+      </section>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar-widget">
+        <h3>Editorial Standards</h3>
+        <p>We follow a strict code of conduct: <br>— No sponsored content disguised as editorial.<br>— No affiliate links in critical reviews.<br>— Corrections are published transparently.<br>— AI is used only for research assistance, never for writing.</p>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">← Back to Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Follow the journal</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size: 1.5rem; margin-bottom: 1rem;">House Lines <span>Matter</span></div>
+          <p style="max-width: 300px; line-height: 1.7;">An independent editorial publication exploring interior design, architecture, and the built environment. We publish long-form guides, critical essays, and practical advice.</p>
+          <p style="margin-top: 1.5rem; font-size: 0.75rem;">© 2025 House Lines Matter. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script for active nav state (already set via class in HTML)
+    // Additional interactive behaviour could be added here.
+    document.addEventListener('DOMContentLoaded', () => {
+      // Optional: log page ready
+      console.log('About page ready.');
+    });
+  </script>
+
+</body>
+</html>
